@@ -34,7 +34,7 @@ photo = "photo.jpg"
 
 token_cp = 'eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIyMDc4ODg0LCJvcmdJZCI6NzExNTI4LCJ0eXBlIjoxLCJtb2JpbGUiOiI5MTg2MDAzOTAyODgiLCJuYW1lIjoiU2Fua2V0IFNvbmFyIiwiZW1haWwiOiJoanMuc2Fua2V0QGdtYWlsLmNvbSIsImlzSW50ZXJuYXRpb25hbCI6MCwiZGVmYXVsdExhbmd1YWdlIjoiRU4iLCJjb3VudHJ5Q29kZSI6IklOIiwiY291bnRyeUlTTyI6IjkxIiwidGltZXpvbmUiOiJHTVQrNTozMCIsImlzRGl5Ijp0cnVlLCJvcmdDb2RlIjoidWphbGFmIiwiaXNEaXlTdWJhZG1pbiI6MCwiZmluZ2VycHJpbnRJZCI6ImM4MjEyNjRkZWJsazhmYjNlMmE2MGJkYmQ0ZWY3MmEzYjkiLCJpYXQiOjE3NDc5MDg0MDcsImV4cCI6MTc0ODUxMzIwN30.94tOOkdLvJ3HaGApNfDxcpjnlJH8d-bf2ixrqBIDJVJGWIDIi0fQfGLwR3NEtEWX'
 
-@bot.on_message(filters.command(["start"]) & filters.user(owner_id))
+@bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     await m.reply_text(f"**Hello Bruh** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n>>I am TXT file Downloader Bot.\n>>Send me /txt Command And Follow Steps\nIf You Want To Stop Me Just Send /stop to stop me 😎")
 
