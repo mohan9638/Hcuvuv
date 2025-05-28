@@ -30,8 +30,8 @@ bot = Client("bot",
              api_id=add,
              api_hash='add')
 
-owner_id = [6530997270]
-auth_users = [6530997270]
+owner_id = [5927517339]
+auth_users = [5927517339]
 photo1 = 'https://envs.sh/PQ_.jpg'
 getstatusoutput(f"wget {photo1} -O 'photo.jpg'")
 photo = "photo.jpg"
@@ -184,7 +184,7 @@ async def account_login(bot: Client, m: Message):
                 url = f"{api_url}pw-dl?url={url}&token={token}&authorization={api_token}&q={raw_text2}"
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
-            name = f'{name1[:60]} 𝐃𝐈𝐋𝐉𝐀𝐋𝐄 ❤️'
+            name = f'{name1[:60]} - Astronaut'
 
             if "youtu" in url:
                 ytf = f"b[height<={raw_text2}][ext=mp4]/bv[height<={raw_text2}][ext=mp4]+ba[ext=m4a]/b[ext=mp4]"
@@ -197,10 +197,10 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'**╭── ⋆⋅☆⋅⋆ ──╮**\n✦ **{str(count).zfill(3)}** ✦\n**╰── ⋆⋅☆⋅⋆ ──╯**\n\n🎭 **Title:** `{name1} 😎 Admin:)™.mkv`\n🖥️ **Resolution:** [{res}]\n\n📘 **Course:** `{b_name}`\n\n🚀 **Extracted By:** `{MR}`'
-                cc1 = f'**╭── ⋆⋅☆⋅⋆ ──╮**\n✦ **{str(count).zfill(3)}** ✦\n**╰── ⋆⋅☆⋅⋆ ──╯**\n\n🎭 **Title:** `{name1} 😎 Admin:)™.pdf`\n\n📘 **Course:** `{b_name}`\n\n🚀 **Extracted By:** `{MR}`'
-                cc2 = f'**╭── ⋆⋅☆⋅⋆ ──╮**\n✦ **{str(count).zfill(3)}** ✦\n**╰── ⋆⋅☆⋅⋆ ──╯**\n\n🎭 **Title:** `{name1} 😎 Admin:)™.jpg`\n\n📘 **Course:** `{b_name}`\n\n🚀 **Extracted By:** `{MR}`'
-                ccyt = f'**╭── ⋆⋅☆⋅⋆ ──╮**\n✦ **{str(count).zfill(3)}** ✦\n**╰── ⋆⋅☆⋅⋆ ──╯**\n\n🎭 **Title:** `{name1} 😎 Admin:)™.mkv`\n🎬 **Video Link:** {url}\n🖥️ **Resolution:** [{res}]\n\n📘 **Course:** `{b_name}`\n\n🚀 **Extracted By:** `{MR}`'
+                cc = f'**╭── ⋆⋅☆⋅⋆ ──╮**\n✦ **{str(count).zfill(3)}** ✦\n**╰── ⋆⋅☆⋅⋆ ──╯**\n\n🎭 **Title:** `{name1} .mkv`\n🖥️ **Resolution:** [{res}]\n\n📘 **Course:** `{b_name}`\n\n🚀 **Extracted By:** `{MR}`'
+                cc1 = f'**╭── ⋆⋅☆⋅⋆ ──╮**\n✦ **{str(count).zfill(3)}** ✦\n**╰── ⋆⋅☆⋅⋆ ──╯**\n\n🎭 **Title:** `{name1} .pdf`\n\n📘 **Course:** `{b_name}`\n\n🚀 **Extracted By:** `{MR}`'
+                cc2 = f'**╭── ⋆⋅☆⋅⋆ ──╮**\n✦ **{str(count).zfill(3)}** ✦\n**╰── ⋆⋅☆⋅⋆ ──╯**\n\n🎭 **Title:** `{name1} jpg`\n\n📘 **Course:** `{b_name}`\n\n🚀 **Extracted By:** `{MR}`'
+                ccyt = f'**╭── ⋆⋅☆⋅⋆ ──╮**\n✦ **{str(count).zfill(3)}** ✦\n**╰── ⋆⋅☆⋅⋆ ──╯**\n\n🎭 **Title:** `{name1} .mkv`\n🎬 **Video Link:** {url}\n🖥️ **Resolution:** [{res}]\n\n📘 **Course:** `{b_name}`\n\n🚀 **Extracted By:** `{MR}`'
 
                 if "drive" in url:
                     try:
