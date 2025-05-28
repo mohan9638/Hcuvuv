@@ -27,7 +27,7 @@ import cloudscraper
 
 bot = Client("bot",
              bot_token='add',
-             api_id=add,
+             api_id='add' ,
              api_hash='add')
 
 owner_id = [5927517339]
